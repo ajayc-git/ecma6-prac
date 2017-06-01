@@ -1,0 +1,11 @@
+const PI = 3.14;
+//PI = 4 // Can't be overridden
+console.log(PI);
+
+//Scope is restricted to block
+{
+  const H = 4.8;
+  console.log("Inside: " +H);
+}
+
+  //console.log("Outside: " +H);// Wont be accesable
