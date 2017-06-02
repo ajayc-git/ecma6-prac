@@ -1,0 +1,15 @@
+let name = "Venkat";
+console.log(`Hi! ${name}`);
+
+let price = 21.5;
+let prod = 'Rice';
+let unit = 2;
+
+function parse(strings,...values) {
+ 	console.log(strings); 
+  	//console.log(values.length);
+  values[1] = (values[0])>1?"bags":"bag";
+  return `${values[0]} ${values[1]} ${strings[2]} ${values[2]} ${strings[3]} Rs.${values[3]}`;
+}
+
+console.log(parse`${unit} ${""} of ${prod} is ${price * unit}`);
