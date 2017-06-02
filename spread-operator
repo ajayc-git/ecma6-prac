@@ -1,0 +1,17 @@
+let p = [1,2,3];
+let s = [4,5,6];
+
+console.log(p);
+console.log(...p);//spread operator spreads the array values as normal values
+
+//p.push(s);// Add as additinal array to array p
+p.push(...s);//add values independently with pread operator
+console.log(p);
+
+function funcAdd (x,y,z) {
+  
+  console.log(x+y+z);
+  
+}
+
+funcAdd(...s);
