@@ -1,0 +1,12 @@
+// Promise
+let d = new Promise((res,rej) => {
+  setTimeout(() => {
+  if(false) {
+    res("Success");
+  } else {
+    rej("Failure");
+  }},2000);
+});
+
+d.then((d)=> {  console.log(d);}).
+  catch((e)=> {  console.log(e);});
